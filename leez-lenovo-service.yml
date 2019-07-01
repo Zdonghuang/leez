@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: leapicloud
+  name: leez-lenovo 
+  labels:
+    k8s-app: leez-lenovo
+spec:
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+    nodePort: 8884
+  type: NodePort
+  selector:
+    k8s-app: leez-lenovo
+status:
+  loadBalancer: {}

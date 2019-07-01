@@ -1,0 +1,83 @@
+/* @import "./font.css"; */
+body{
+  margin: 0;
+  background-color: #040406;
+  font-family: 'Roboto', sans-serif;
+}
+div{
+  box-sizing: border-box;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+}
+button{
+  outline: none;
+  border: none;
+  padding: 10px 65px;
+  background-color: #E12726;
+  color:#fff;
+}
+button:hover{
+  background-color: #E54D4D;
+  cursor: pointer;
+}
+input:focus{
+  outline: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+h1, h2 ,h3,h4,h5,h6,p,span,button,input{
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+img{
+  vertical-align: middle;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+a:hover{
+  text-decoration: none;
+}
+.bold{
+  font-weight: bold;
+}
+/*清除浮动代码*/
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
+.swiper-pagination{
+  position: relative !important;
+  top: -30px;
+  background: transparent;
+  height: 0;
+}
+.swiper-pagination>span{
+  margin:0 10px;
+  outline: none;
+}
+.swiper-pagination-bullet{
+  width: 2px !important;
+  height: 6px !important;
+  background: #fff !important;
+  border-radius: 0 !important;
+  border: 1px solid #fff !important;
+  opacity: 1 !important;
+  vertical-align: middle !important;
+}
+.swiper-pagination-bullet-active{
+  width: 8px !important;
+  height: 8px !important;
+  border-radius:50% !important;
+  background: transparent !important;
+}
+

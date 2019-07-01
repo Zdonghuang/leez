@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: leapicloud
+  labels:
+    k8s-app: leez-lenovo
+  name: leez-lenovo
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        k8s-app: leez-lenovo
+    spec:
+      containers:
+      - image: 172.17.171.102:5000/leez-lenovo:V1
+        name: leez-lenovo
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+        resources: {}
+      restartPolicy: Always
+      imagePullSecrets:
+      - name: localsecret
+status: {}
